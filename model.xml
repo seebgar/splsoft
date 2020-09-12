@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="SPL">
+			<or mandatory="true" name="Acceso">
+				<feature name="Aplicacion de escritorio"/>
+				<feature name="Aplicación móvil"/>
+				<feature name="Plataforma web"/>
+			</or>
+			<and mandatory="true" name="Planeación">
+				<feature mandatory="true" name="Agendar por calendario"/>
+				<feature name="Invitación por link"/>
+			</and>
+			<and mandatory="true" name="Mensajería instantanea">
+				<graphics key="collapsed" value="false"/>
+				<and mandatory="true" name="Chat grupal">
+					<feature name="administrado por admin"/>
+					<feature name="administrado por invitado"/>
+				</and>
+				<or name="multimedia">
+					<feature name="escritorio"/>
+					<feature name="pantalla"/>
+					<feature name="archivos"/>
+					<feature name="tablero"/>
+				</or>
+				<alt name="Almacenamiento">
+					<feature name="20GB"/>
+					<feature name="100GB"/>
+					<feature name="200GB"/>
+				</alt>
+			</and>
+			<and mandatory="true" name="Comunicación">
+				<feature mandatory="true" name="Audio"/>
+				<feature name="Video"/>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>archivos</var>
+				<var>Almacenamiento</var>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>

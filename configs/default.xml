@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature name="SPL"/>
+	<feature name="Acceso"/>
+	<feature name="Aplicacion de escritorio"/>
+	<feature name="Aplicación móvil"/>
+	<feature name="Plataforma web"/>
+	<feature name="Planeación"/>
+	<feature name="Agendar por calendario"/>
+	<feature name="Invitación por link"/>
+	<feature name="Mensajería instantanea"/>
+	<feature name="Chat grupal"/>
+	<feature name="administrado por admin"/>
+	<feature name="administrado por invitado"/>
+	<feature name="multimedia"/>
+	<feature name="escritorio"/>
+	<feature name="pantalla"/>
+	<feature name="archivos"/>
+	<feature name="tablero"/>
+	<feature name="Almacenamiento"/>
+	<feature name="20GB"/>
+	<feature name="100GB"/>
+	<feature name="200GB"/>
+	<feature name="Comunicación"/>
+	<feature name="Audio"/>
+	<feature name="Video"/>
+</configuration>
